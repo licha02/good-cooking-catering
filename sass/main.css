@@ -1,0 +1,25 @@
+@font-face {
+  font-family: titulo;
+  src: url(../fonts/titulos/static/PlayfairDisplay-Regular.ttf);
+}
+@font-face {
+  font-family: subtitulo;
+  src: url(../fonts/lato/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: subtituloV2;
+  src: url(../fonts/lato/Lato-Italic.ttf);
+}
+@font-face {
+  font-family: parrafo;
+  src: url(../fonts/parrafos/static/OpenSans/OpenSans-Regular.ttf);
+}
+main h1 {
+  font-family: titulo;
+}
+main h2, main h3, main h4 {
+  font-family: subtitulo;
+}
+main h5, main h6 {
+  font-family: subtituloV2;
+}/*# sourceMappingURL=main.css.map */
