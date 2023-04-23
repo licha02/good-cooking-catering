@@ -1,0 +1,26 @@
+.card {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: box-shadow 0.5s ease, transform 0.3s ease;
+}
+
+.portada {
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.portada:hover {
+    transform: scale(1.05);
+    transition: box-shadow 0.5s ease, transform 0.5s ease;
+}
+
+.equipo {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.equipo:hover {
+    transform: scale(1.2);
+    transition: box-shadow 0.5s ease, transform 0.3s ease;
+}
