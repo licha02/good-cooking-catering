@@ -87,7 +87,8 @@
             </div>
           </div>
           <div class="text-center p-5">
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary" id="enviarBtn">Enviar</button>
+            <!-- Agregamos un id al botón para identificarlo en JavaScript -->
           </div>
         </form>
       </div>
@@ -144,8 +145,29 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+  </script>
+
+  <script>
+    document.getElementById("enviarBtn").addEventListener("click", function (event) {
+      event.preventDefault(); 
+
+      
+      var nombre = document.getElementById("NameInput").value;
+      var apellido = document.getElementById("LastnameInput").value;
+      var telefono = document.getElementById("PhoneInput").value;
+      var mensaje = document.getElementById("MessageTextarea").value;
+
+      
+      var url = "https://wa.me/+542213034335" +
+        "?text=Nombre:%20" + encodeURIComponent(nombre) +
+        "%0AApellido:%20" + encodeURIComponent(apellido) +
+        "%0ATeléfono:%20" + encodeURIComponent(telefono) +
+        "%0AMensaje:%20" + encodeURIComponent(mensaje);
+
+      window.open(url);
+    });
+  </script>
 
 </body>
 
